@@ -4,7 +4,7 @@ session_start();
 include("connect.php");
 $us=$_GET["user"];
 $pw=$_GET["pass"];
- $sql= "select*form sinhvien where masv='{$us}'
+ $sql= "select*from sinhvien where masv='{$us}'
         and matkhau='{$pw}'";
 mysqli_query($con, "SET NAMES 'utf-8'");
 $rs = mysqli_query($con, $sql);
